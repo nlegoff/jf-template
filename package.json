@@ -12,8 +12,6 @@
             "main": {
                 "title": "Phraseanet aggregated feed entries",
                 "description": "The template displays a long abstract of the most recent news from phraseanet RSS aggregated feed.A thumbnail gets displayed along with the text when available.",
-                "multiple":true,
-                "maxLength":2
             }
         },
         "devices": [
