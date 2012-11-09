@@ -1,0 +1,35 @@
+{
+  "name": "phrasea-aggregated-feeds",
+  "fullName": "Phraseanet Aggregated Feeds",
+  "description": "Fetch content from a phraseanet aggregated feed",
+  "version": "0.0.1",
+  "joshfire": {
+    "images": {
+      "small": "http://i.imgur.com/u4mXU.png",
+      "big": "http://i.imgur.com/u4mXU.png"
+    },
+    "datasources": {
+      "main": {
+        "title": "Phraseanet aggregated feed entries",
+        "description": "The template displays a long abstract of the most recent news from phraseanet RSS aggregated feed.A thumbnail gets displayed along with the text when available."
+      }
+    },
+    "devices": [
+      {
+        "devices": "*",
+        "orientation": "auto",
+        "disablePreview": false,
+        "startfile": "index.html",
+        "images": "img/Phraseanet380.png",
+        "screenshots": [
+          "img/Phraseanet380.png",
+          "img/Phraseanet380.png"
+        ]
+      }
+    ],
+    "options": {
+      "schema": {},
+      "form": []
+    }
+  }
+}
