@@ -1,6 +1,6 @@
 {
     "name": "phrasea-aggregated-feeds",
-    "fullName": "Phraseanet Aggregated Feeds",
+    "fullName": "Phraseanet Aggregated Feedsss",
     "description": "Fetch content from a phraseanet aggregated feed",
     "version": "0.0.1",
     "joshfire": {
@@ -30,18 +30,17 @@
         }
         ],
         "options": {
-            "schema": {},
+            "schema": {
+                "abouthtml": {
+                    "type": "string",
+                    "title": "About me"
+                }
+            },
             "form": [
+            "datasources.main",
             {
-                "type": "fieldset",
-                "legend": "Sources",
-                "items": [
-                    {
-                      "title": "Data source",
-                      "description": "Any type of datasources accepted.",
-                      "key": "datasources.main[]"
-                    }
-                ]
+                "key": "abouthtml",
+                "type": "textarea"
             }
             ]
         }
