@@ -7,23 +7,24 @@ entries.find(
   },
   function (err, data) {
     var html = "";
-    _.map(data.entries, function (feed, idx) {
-         html += "<span class='title'>" + feed.name + "</span><div>"
-        _.map(feed.entries, function (entry, idx) {
-            html += "<span class='title'>" + entry.name + "</span>"
-            + "<br/>" + entry.description
+        _.map(data.entries, function (entry, idx) {
+            console.log()
+            html += "<div><h2>" + entry.name + "</h2>"
+            html += "<i>" + entry.description + "</i><div>"
 
             if (entry.thumbnail) {
+                html += "<ul>";
                 _.map(entry.thumbnail, function (thumb, idx) {
-                    html += "<span class='thumbnail'>" + thumb.name + " <br /><img src='"
+                    html += "<li><table><tr><td><img src='"
                     + thumb.contentURL
-                    + "' alt='" + thumb.name + "' />"
-                    + "</span><br />";
+                    + "' alt='" + thumb.name + "' /></td>"
+                    + "<td><h4>" + thumb.name + "</h4></td></tr></table><li>";
                 });
+                html += "</ul>";
             }
+            html += "</div></div>";
         });
-        html += "</div>";
-    });
-    document.getElementById('entries').innerHTML = html;
+
+        document.getElementById('entries').innerHTML = html;
   }
 );
