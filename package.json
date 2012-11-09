@@ -28,26 +28,9 @@
       }
     ],
     "options": {
-      "schema": {
-        "grandma": {
-          "title": "Grandma",
-          "type": "object",
-          "properties": {
-            "nickname": {
-              "type": "string",
-              "title": "Grandma's nickname"
-            },
-            "picture": {
-              "type": "string",
-              "title": "Grandma's picture (URL)"
-            }
-          }
-        }
-      },
+      "schema": {},
       "form": [
-        "grandma.nickname",
-        "grandma.picture",
-        "datasources.recipes"
+        "datasources.main"
       ]
     }
   }
